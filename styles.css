@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #bea7e9, #a16dc1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgb(144, 83, 202);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#todo-input:focus {
+    border-color: #597ae5;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+}
+
+#add-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5f2da0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #4a198e;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+}
+
+.todo-item span {
+    flex-grow: 1;
+    color: #333;
+    font-size: 16px;
+}
+
+.todo-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.todo-item .edit-btn {
+    background: #48b206;
+    color: white;
+}
+
+.todo-item .edit-btn:hover {
+    background: #359406;
+}
+
+.todo-item .delete-btn {
+    background: #e52c2c;
+    color: white;
+    margin-left: 5px;
+}
+
+.todo-item .delete-btn:hover {
+    background: #be100a;
+}
+
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Checkbox styling */
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Completed task styling */
+.todo-item.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}
